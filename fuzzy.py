@@ -13,14 +13,14 @@ x_kemampuan = int(input('Masukan Kemampuan : '))
 #rumus kinerja = (x - a) / (b-a)
 # Kinerja
 if (x_kinerja <= 60) :
-   hasil_tdk_puas_kinerja = (x_kinerja - 60) / (80 - 60)
+   hasil_tdk_puas_kinerja = 1
    hasil_puas_kinerja = 0
 elif (x_kinerja > 60 and x_kinerja < 80) :
     hasil_tdk_puas_kinerja = (60 - x_kinerja) / (80 - 60)
     hasil_puas_kinerja = (x_kinerja - 80) / (80 - 60)
 elif (x_kinerja >= 80) : 
     hasil_tdk_puas_kinerja = 0
-    hasil_puas_kinerja = (80 - x_kinerja) / (80 - 60)
+    hasil_puas_kinerja = 1
 
 if (hasil_puas_kinerja != 0) :
    print('Nilai Memuaskan Kinerja : ',hasil_puas_kinerja)
@@ -31,14 +31,14 @@ elif(hasil_tdk_puas_kinerja == 0) :
 
 # Kedisiplinan
 if (x_kedisiplinan <= 60) :
-   hasil_tdk_puas_disiplin = (x_kinerja - 60) / (80 - 60)
+   hasil_tdk_puas_disiplin = 1
    hasil_puas_disiplin = 0
 elif (x_kedisiplinan > 60 and x_kedisiplinan < 80) :
     hasil_tdk_puas_disiplin = (60 - x_kedisiplinan) / (80 - 60)
     hasil_puas_disiplin = (x_kedisiplinan - 80) / (80 - 60)
 elif (x_kedisiplinan >= 80) : 
     hasil_tdk_puas_disiplin = 0
-    hasil_puas_disiplin = (80 - x_kedisiplinan) / (80 - 60)
+    hasil_puas_disiplin = 1
 
 if (hasil_puas_disiplin != 0) :
    print('Nilai Memuaskan Disiplin : ',hasil_puas_disiplin)
@@ -48,14 +48,14 @@ elif(hasil_puas_disiplin == 0) :
     
 # Kemampuan
 if (x_kemampuan <= 60) :
-   hasil_tdk_puas_kemampuan = (x_kemampuan - 60) / (80 - 60)
+   hasil_tdk_puas_kemampuan = 1
    hasil_puas_kemampuan = 0
 elif (x_kemampuan > 60 and x_kemampuan < 80) :
     hasil_tdk_puas_kemampuan = (60 - x_kemampuan) / (80 - 60)
     hasil_puas_kemampuan = (x_kemampuan - 80) / (80 - 60)
 elif (x_kemampuan >= 80) : 
     hasil_tdk_puas_kemampuan = 0
-    hasil_puas_kemampuan = (80 - x_kemampuan) / (80 - 60)
+    hasil_puas_kemampuan = 1
 
 if (hasil_puas_kemampuan != 0) :
    print('Nilai Memuaskan : ',hasil_puas_kemampuan)
